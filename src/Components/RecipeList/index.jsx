@@ -94,10 +94,11 @@ function RecipeList() {
   };
   
 
-  const handleindividualFilter=(type)=>{
+  const handleindividualFilter=(type,value)=>{
         setSeletedFilters(prevFilters=>({
             ...prevFilters,
-            [type]:[]
+            [type]: prevFilters[type].filter((item) => item !== value),
+
         }))
   }
 

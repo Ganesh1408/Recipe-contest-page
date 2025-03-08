@@ -59,7 +59,7 @@ function FilterSidebar({
                   }}
                   onClick={(e) => {
                     e.stopPropagation();
-                    handleindividualFilter("mealType");
+                    handleindividualFilter("mealType",item);
                   }}
                 >
                   X
@@ -106,7 +106,7 @@ function FilterSidebar({
                   }}
                   onClick={(e) => {
                     e.stopPropagation();
-                    handleindividualFilter("dishType");
+                    handleindividualFilter("dishType",dish);
                   }}
                 >
                   X
@@ -140,7 +140,7 @@ function FilterSidebar({
                   }}
                   onClick={(e) => {
                     e.stopPropagation();
-                    handleindividualFilter("Attribute");
+                    handleindividualFilter("Attribute",attribute);
                   }}
                 >
                   X
