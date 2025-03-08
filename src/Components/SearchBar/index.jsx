@@ -34,7 +34,7 @@ function SearchBar({onSearch,sort}) {
         onKeyDown={handleKeyDown}
         ref={inputRef}
         className="searchbar"
-        type="text"
+        type="search"
         value={input}
         placeholder="Search   Recipe/chef name/description"
       />
