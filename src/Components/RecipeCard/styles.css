@@ -1,0 +1,41 @@
+
+.RecipeCard{
+    height:520px;
+    width:350px;
+    border:2px solid lightgrey;
+    border-radius:8px ;
+    padding:0px 8px ;
+    margin:10px;
+    list-style-type: none;
+    line-height: 24px;
+    background-color: white;
+
+    
+    
+    
+    
+}
+.RecipeCard h2{
+    font-size: 20px;
+    font-weight: 600;
+    font-family:sans-serif;
+    color: #333;
+    
+}
+.RecipeCard p{
+    font-size: 15px;
+    font-weight: 500;
+    font-family:sans-serif;
+    color: #333;
+    
+}
+.RecipeCard_image{
+    width:100%;
+    height:200px;
+    border-radius: 8px;
+    object-fit:cover ;
+    margin:10px 0px ;
+    aspect-ratio: 16/9;
+
+}
+
