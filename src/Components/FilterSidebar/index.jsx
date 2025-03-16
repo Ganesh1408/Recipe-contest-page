@@ -49,6 +49,7 @@ function FilterSidebar({
                   selectedFilter.mealType.includes(item) ? "active" : ""
                 }
                 onClick={handleFilterChange("mealType", item)}
+              
               >
                 {item}
                 <span
@@ -59,7 +60,7 @@ function FilterSidebar({
                   }}
                   onClick={(e) => {
                     e.stopPropagation();
-                    handleindividualFilter("mealType",item);
+                    handleindividualFilter("mealType", item);
                   }}
                 >
                   X
@@ -92,7 +93,9 @@ function FilterSidebar({
             <>
               <li
                 key={index}
-                onClick={handleFilterChange("dishType", dish)}
+                onClick={
+                  handleFilterChange("dishType", dish)
+                }
                 className={`cross ${
                   selectedFilter.dishType.includes(dish) ? "active" : ""
                 }`}
@@ -106,7 +109,7 @@ function FilterSidebar({
                   }}
                   onClick={(e) => {
                     e.stopPropagation();
-                    handleindividualFilter("dishType",dish);
+                    handleindividualFilter("dishType", dish);
                   }}
                 >
                   X
@@ -140,7 +143,7 @@ function FilterSidebar({
                   }}
                   onClick={(e) => {
                     e.stopPropagation();
-                    handleindividualFilter("Attribute",attribute);
+                    handleindividualFilter("Attribute", attribute);
                   }}
                 >
                   X
